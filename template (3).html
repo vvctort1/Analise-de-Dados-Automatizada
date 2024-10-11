@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ heading }}</h1>
+    <p>{{ description }}</p>
+
+    <h2>Informações Gerais do DataFrame</h2>
+    <ul>
+        <li>Número de colunas: {{ info_df[0] }}</li>
+        <li>Número de linhas: {{ info_df[1] }}</li>
+        <li>Dados faltantes: {{ info_df[2] }}</li>
+        <li>Entradas duplicadas: {{ info_df[3] }}</li>
+    </ul>
+
+    <h2>Resultados da Análise de Variáveis Numéricas</h2>
+    {% for result in result_variables %}
+    <h3>{{ result.variable }}</h3>
+    <ul>
+        <li>Média: {{ result.mean }}</li>
+        <li>Mediana: {{ result.median }}</li>
+        <li>Máximo: {{ result.max }}</li>
+        <li>Mínimo: {{ result.min }}</li>
+    </ul>
+    {% endfor %}
+
+
+    <h2>Gráfico de Quantidade de Dados Faltantes por Coluna</h2>
+    <img src="data:image/png;base64,{{ plot_urls }}" alt="Gráfico de Dados Faltantes">
+
+</body>
+</html>
