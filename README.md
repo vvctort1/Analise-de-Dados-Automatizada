@@ -3,7 +3,7 @@
 Este projeto tem como objetivo gerar um relatório de análise de dados utilizando Python, com visualizações gráficas e estatísticas descritivas. O relatório é gerado em formato HTML e é baseado em um template Jinja2.
 
 ## Integrantes
-- Victor Kenzo Toma - RM
+- Victor Kenzo Toma - RM551649
 - Murilo Marsola Eloys - RM552117
 
 ## Estrutura do Projeto
